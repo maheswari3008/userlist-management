@@ -25,7 +25,7 @@ export type Task = {
 
 export type TaskDeleteProps = {
   isDelete?: boolean;
-  deleteId?: number | undefined;
+  deleteId?: string | undefined;
   setIsDelete: (val: boolean) => void;
   setTasks: React.Dispatch<React.SetStateAction<Task[]>>;
   setFilteredTasks?: React.Dispatch<React.SetStateAction<Task[]>>;
@@ -45,7 +45,8 @@ export type TaskFormProps = {
 export type UserCardProps = {
   tasks: Task[];
   onEdit: (task: Task) => void;
-  onDelete: (id: number | undefined) => void;
+  onDelete: (id: string | undefined) => void;
+  // onDelete: string;
 };
 
 export type UserFormValues = InferType<typeof userFormSchema>;

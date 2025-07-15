@@ -31,7 +31,7 @@ export default function TaskDashboard() {
   const [loading, setLoading] = useState(true);
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isDelete, setIsDelete] = useState(false);
-  const [deleteId, setDeleteId] = useState<number | undefined>(undefined);
+  const [deleteId, setDeleteId] = useState<string | undefined>(undefined);
   const [currentTask, setCurrentTask] = useState<Task | null>(null);
   const [mode, setMode] = useState<"create" | "edit" | undefined>();
   const [searchActive, setSearchActive] = useState(false);

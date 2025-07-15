@@ -14,7 +14,6 @@ export default function CreateUser({
   setTasks,
   isModalVisible,
 }: TaskFormProps) {
-  console.log("isModalVisible :", isModalVisible);
   const {
     control,
     handleSubmit,
