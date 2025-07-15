@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import type { LoginFormInputs, LoginProps } from "../types";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { loginSchema } from "./LoginSchema";
+import { AiOutlineLock, AiOutlineUser } from "react-icons/ai";
 
 export default function Login({ setIsAuthenticated }: LoginProps) {
   // console.log("setIsAuthenticated :", setIsAuthenticated);
@@ -55,6 +56,7 @@ export default function Login({ setIsAuthenticated }: LoginProps) {
                   placeholder="Enter your email"
                   {...field}
                   className="w-full mt-2"
+                  prefix={<AiOutlineUser />}
                 />
               )}
             />
@@ -77,6 +79,7 @@ export default function Login({ setIsAuthenticated }: LoginProps) {
                   placeholder="Enter your password"
                   {...field}
                   className="w-full mt-2"
+                  prefix={<AiOutlineLock />}
                 />
               )}
             />
