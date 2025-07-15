@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import type { InferType } from "yup";
-import type { userFormSchema } from "./createUser/userSchema";
+import type { userFormSchema } from "./createUser/UserSchema";
 
 export type LoginFormInputs = {
   email: string;

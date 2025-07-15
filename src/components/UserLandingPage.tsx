@@ -5,7 +5,7 @@ import { getTasks } from "../api/mockApi";
 import CreateUser from "./createUser/CreateUser";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { userFormSchema } from "./createUser/userSchema";
+import { userFormSchema } from "./createUser/UserSchema";
 import type { Task } from "./types";
 import UserDelete from "./UserDelete";
 import UserCard from "./UserCard";
